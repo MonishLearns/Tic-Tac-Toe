@@ -1,0 +1,35 @@
+.inner_board {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+    font-size: 36px;
+    border: 2px solid #cccccc;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    color: black;
+}
+
+.cell:hover {
+    background-color: #cccccc;
+}
+
+.reset_status {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+  
+.reset_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  } 
+.reset_button button {
+    cursor: pointer;
+}
